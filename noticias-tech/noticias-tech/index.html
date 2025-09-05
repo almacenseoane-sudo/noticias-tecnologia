@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚀 Noticias Tecnológicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Noticias Tecnológicas</h1>
+    <p>Las últimas novedades del mundo tech, actualizadas cada 5 minutos</p>
+
+    <div class="controls">
+      <input 
+        type="text" 
+        id="buscador" 
+        placeholder="Buscar noticias..." 
+        onkeyup="filtrarNoticias()" 
+      />
+      <button id="modo-oscuro" onclick="cambiarTema()">
+        🌙 Modo Oscuro
+      </button>
+    </div>
+  </header>
+
+  <main id="noticias">
+    <p class="cargando">Cargando noticias...</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
